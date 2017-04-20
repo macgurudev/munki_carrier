@@ -24,19 +24,19 @@ import logging
 
 # Variables that can be changed
 
-log_File = "/Users/admin/Library/Logs/munki_linker.log"
+log_File = "/Users/admin/Library/Logs/munki_linker.log"		# Currently unused
 
-bashCommand = "/usr/local/munki/makecatalogs"					# Munki Makecatalogs exec location
-default_Catalog = "Master"										# Default catalog to use
-master_PkgsInfo = "/usr/local/munkimaster/masterpkgsinfo"  		# Path to the Master pkgsInfo directory
-master_Icons = "/usr/local/munkimaster/mastericons"				# Path to the Master icons directory
+bashCommand = "/usr/local/munki/makecatalogs"			# Munki Makecatalogs exec location
+default_Catalog = "Master"					# Default catalog to use
+master_PkgsInfo = "/usr/local/munkimaster/masterpkgsinfo"  	# Path to the Master pkgsInfo directory
+master_Icons = "/usr/local/munkimaster/mastericons"		# Path to the Master icons directory
 
 pkgs_Info = "/Volumes/MUNKI_Stor/munki_repo/pkgsinfo/master" 	# Path to client pkgsInfo directory
-client_Icons = "/Volumes/MUNKI_Stor/munki_repo/icons"			# Path to client icons
-nfs_Mount_Name = "master"										# NFS mount name for pkgs
+client_Icons = "/Volumes/MUNKI_Stor/munki_repo/icons"		# Path to client icons
+nfs_Mount_Name = "master"					# NFS mount name for pkgs
 
 
-## Init Variables
+## Init Variables. Leave these blank
 icon_Name = ""
 package_List = ""
 
