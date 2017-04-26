@@ -128,13 +128,16 @@ for root, dirs, files in os.walk(master_PkgsInfo, topdown=False):
 					# Write changes back out
 					plistlib.writePlist(p, client_Full_Path)
 					
-					# Run bash command to makecatalogs for munki
-					os.system(bashCommand)
 				except:
 					print("Oh no!  Failure :(")
 				
 				print "Added new pkginfo for: ",name
-			
+
+
+# Run bash command to makecatalogs for munki only if new package was added
+if package_List != "":
+	os.system(bashCommand)
+				
 # Output all packages added:
 print ""
 print "Packages added to the repo: "
